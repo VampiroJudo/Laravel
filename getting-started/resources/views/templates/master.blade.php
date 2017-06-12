@@ -14,6 +14,9 @@
        			/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body>
-		@yield('content')
+		@include('partials.header')
+		<div class="container">
+			@yield('content')
+		</div>
 	</body>
 </html>

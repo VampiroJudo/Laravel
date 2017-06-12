@@ -12,6 +12,8 @@
        	.7/css/bootstrap.min.css"
        			integrity="sha384-BVYiiSIFeK1dGmJRakycuHAHRg320mUcww7on3RYdg4Va+PmSTsz
        			/K68vbdEjh4u" crossorigin="anonymous">
+       	<link href='http//fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+       	<link rel="stylesheet" href="{{ URL::to('css/styles.css') }}">
 	</head>
 	<body>
 		@include('partials.header')

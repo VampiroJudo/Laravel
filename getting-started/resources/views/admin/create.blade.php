@@ -3,7 +3,7 @@
 @section('content')
 	<div class="row">
 		<div class="col-md-12">
-			<form action="" class="post">
+			<form action="{{ route('admin.create') }}" class="post">
 				<div class="from-group">
 					<label for="title">Title</label>
 					<input type="text" class="form-control" id="title" name="title">

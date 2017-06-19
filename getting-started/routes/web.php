@@ -4,7 +4,18 @@ Route::get('/', function () {
     return view('blog.index');
 })->name('blog-index');
 
-Route::get('post/{id}', function() {
+Route::get('post/{id}', function($id) {
+	if ($id = 1){
+		$post = [
+			'title' => 'Learning Laravel',
+			'content' => 'This blog post will get right on track with Laravel!'
+		];
+	} else {
+		$post = [
+			'title' => 'Something else',
+			'content' => 'Some other content'
+		];
+	}
 	return view('blog.post');
 })->name('blog.post');
 
@@ -25,7 +36,18 @@ Route::group(['prefix' => 'admin'], function() {
 		return('It works!')
 	})->name('admin.create');
 
-	Route::get('edit/{id}', function(){
+	Route::get('edit/{id}', function($id) {
+		if ($id = 1){
+		$post = [
+			'title' => 'Learning Laravel',
+			'content' => 'This blog post will get right on track with Laravel!'
+			];
+		} else {
+			$post = [
+				'title' => 'Something else',
+				'content' => 'Some other content'
+			];
+		}
 		return view('admin.edit');
 	})->name('admin.edit');
 

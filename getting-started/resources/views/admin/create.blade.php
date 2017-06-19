@@ -1,6 +1,7 @@
 @extends('templates.admin')
 
 @section('content')
+	@include('partials.errors')
 	<div class="row">
 		<div class="col-md-12">
 			<form action="{{ route('admin.create') }}" class="post">

@@ -16,7 +16,7 @@ Route::get('post/{id}', function($id) {
 			'content' => 'Some other content'
 		];
 	}
-	return view('blog.post');
+	return view('blog.post', ['post' => $post]);
 })->name('blog.post');
 
 Route::get('about', function() {

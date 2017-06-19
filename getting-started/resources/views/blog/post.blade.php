@@ -8,7 +8,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<p>Lorem impsum dolor something or other.</p>
+			<p>{{ $post['content'] }}</p>
 		</div>
 	</div>
 @endsection
